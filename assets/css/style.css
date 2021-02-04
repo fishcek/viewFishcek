@@ -156,17 +156,20 @@ textarea {
 # Header Login Register
 --------------------------------------------------------------*/
 
-.register .title-login-register-big {
+.title-login-register {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding-bottom: 20px;
 }
 
-.register .title-login-register .header-scrolled, #header.header-inner-pages {
-  background: #fff;
+.title-login-register h2 {
+  float: right;
+  color: #42a5f5;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
-.register .title-login-register .logo {
+.title-login-register .logo {
   font-size: 50px;
   margin: 0;
   padding: 0;
@@ -176,13 +179,13 @@ textarea {
   text-transform: uppercase;
 }
 
-.register .title-login-register .logo a {
+.title-login-register .logo a {
   color: #42a5f5;
   font-weight: bold;
   padding-left: 10px;
 }
 
-.register .title-login-register .logo img {
+.title-login-register .logo img {
   max-height: 40px;
 }
 
