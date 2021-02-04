@@ -38,6 +38,20 @@
 
 <body>
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"><a href="index.html">Fishcek</a></h1> <!-- Logo -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"></a> -->
+
+      
+      
+      <a href="login.html" class="get-login-btn scrollto ml-5" data-toggle="modal" data-target="#myModal">Login</a>
+      <a href="register.html" class="get-register-btn scrollto">Daftar</a>
+    </div>
+  </header><!-- End Header -->
 
   <main id="main">
 
@@ -47,24 +61,13 @@
     <section class="inner-page">
       <div class="register">
         <div class="container">
-          <div class="title-login-register">
-            <img src="assets/img/fish.png" alt="" class="img-fluid"><a href="index.html">Fishcek</a></h1>
-          </div>
-          <h2>Register</h2>
+          <h2>Daftar Akun</h2>
           <div class="row">
             <div class="col-lg-5">
               <img src="assets/img/vector-register.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-7">
-              <form class="php-register-form" action="register.php">
-                <div class="form-group">
-                  <label>Nama Lengkap</label>
-                  <input type="text" class="form-control" name="namaLengkap" placeholder="Nama Lengkap">
-                </div>
-                <div class="form-group">
-                  <label>Username</label>
-                  <input type="text" class="form-control" name="username" placeholder="Username">
-                </div>
+              <form class="php-register-form" action="login.php">
                 <div class="form-group">
                   <label>Email</label>
                   <input type="email" class="form-control" name="email" placeholder="Email">
@@ -73,16 +76,12 @@
                   <label>Password</label>
                   <input type="password" class="form-control" name="password" placeholder="Masukan Password Minimal 8 Karakter">
                 </div>
-                <div class="form-group">
-                  <input type="checkbox" name="name" class="form-checkbox" id="name" />
-                  <span>Saya Menyetujui <a href="#">Syarat dan Ketentuan</a> serta <a href="#">Kebijakan Privasi</a> </span>
-                </div>
                 <div class="form-group text-center">
-                  <button type="submit" class="get-register-btn" onclick="window.location.href='index.html'">Daftar</button>
+                  <button type="submit" class="get-register-btn" onclick="window.location.href='index.html'">Login</button>
                 </div>  
                 <hr>
                 <div class="form-group text-center">
-                    <p>Daftar Dengan</p>
+                    <p>Login Dengan</p>
                     <button type="button" class="get-facebook-btn" onclick="window.open('https://facebook.com/', 'Facebook' , 'height=500,width=500');">Facebook</button>
                     <button type="button" class="get-google-btn" onclick="window.open('https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=532352704633-6pkces9iboppp465idnovkcqtlsa8j7t.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.figma.com%2Ffinish_google_sso&response_type=code&scope=profile%20email&access_type=online&prompt=select_account&state=Onr%2BNlXfOwgG9mfd%2Fx6FZVF94asqIoXZmuu8Tm%2F9d1Yg&flowName=GeneralOAuthFlow', 'Google' , 'height=500,width=500');">Google</button>
                   </div>               

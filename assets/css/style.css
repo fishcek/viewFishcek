@@ -151,6 +151,45 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
+# Header Login Register
+--------------------------------------------------------------*/
+
+.register .title-login-register-big {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+
+.register .title-login-register .header-scrolled, #header.header-inner-pages {
+  background: #fff;
+}
+
+.register .title-login-register .logo {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.register .title-login-register .logo a {
+  color: #42a5f5;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.register .title-login-register .logo img {
+  max-height: 40px;
+}
+
+
+
+/*--------------------------------------------------------------
+
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
@@ -268,17 +307,18 @@ textarea {
   margin-left: 15px;
   color: #212121;
   border-radius: 50px;
-  padding: 6px 25px 7px 25px;
+  padding: 7px 35px 7px 35px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
   border: 2px solid #47b2e4;
   font-weight: 600;
+  background-color: #FFF !important;
 }
 
 .get-login-btn:hover, .get-register-btn:hover{
-  background: #31a9e1;
+  background: #31a9e1 !important;
   color: #fff;
 }
 
@@ -551,7 +591,7 @@ textarea {
 
 .modal-body .php-email-form button[type="submit"] {
   border: solid 2px #47b2e4 ;
-  background-color: #fff;
+  background-color: #fff !important;
   padding: 6px 34px;
   color: #212121;
   transition: 0.4s;
@@ -893,14 +933,22 @@ textarea {
 /*--------------------------------------------------------------
 # register Section
 --------------------------------------------------------------*/
-#register {
-  width: 100%;
-  height: 80vh;
+.register {
   background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -40px;
 }
 
-#register .container {
-  padding-top: 12px;
+.register .container{
+  margin-top: 50px;
+}
+
+.register h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #37517e;
+  padding-bottom: 20px;
 }
 
 #register h1 {
@@ -1009,56 +1057,36 @@ textarea {
   font-weight: 600;
 }
 
-#register .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-#register .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-#register .php-register-form input, #register .php-register-form textarea {
+.register .php-register-form input, #register .php-register-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 5px;
 }
 
-#register .php-register-form input:focus, #register .php-register-form textarea:focus {
+.register .php-register-form input:focus, .register .php-register-form textarea:focus {
   border-color: #47b2e4;
 }
 
-#register .php-register-form textarea {
+.register .php-register-form textarea {
   padding: 10px 12px;
 }
 
-#register .php-register-form input[type="checkbox"] {
+.register .php-register-form input[type="checkbox"] {
   width: 15px; height: 15px;
 }
 
 
 
-#register .php-register-form select:focus {
+.register .php-register-form select:focus {
   border-color: #47b2e4 !important;
 }
 
-#register .sosial-media-register{
+.register .sosial-media-register{
   margin: auto 20% auto 20% !important;
 }
 
-#register .get-register-btn {
+.register .get-register-btn {
   background-color: #fff !important;
   border: 1px solid #47b2e4 !important;
   padding: 12px 34px;
@@ -1067,16 +1095,16 @@ textarea {
   border-radius: 50px;
 }
 
-#register .get-register-btn:focus, #register .get-facebook-btn:focus, #register .get-google-btn:focus {
+.register .get-register-btn:focus, #register .get-facebook-btn:focus, #register .get-google-btn:focus {
   outline: none;
 }
 
-#register .get-register-btn:hover {
+.register .get-register-btn:hover {
   background: #47b2e4 !important;
   color: #fff !important;
 }
 
-#register .get-facebook-btn{
+.register .get-register-btn{
   color: #212121 !important;
   border-radius: 50px;
   padding: 6px 25px 7px 25px;
@@ -1086,9 +1114,23 @@ textarea {
   display: inline-block;
   border: 1px solid #039be5;
   font-weight: 600;
-  background-color: #fff;
+  background-color: #fff !important;
 }
-#register .get-google-btn {
+
+.register .get-facebook-btn{
+  color: #212121 !important;
+  border-radius: 50px;
+  padding: 6px 25px 7px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid #039be5;
+  font-weight: 600;
+  background-color: #fff !important;
+}
+
+.register .get-google-btn {
   color: #212121 !important;
   border-radius: 50px;
   padding: 6px 25px 7px 25px;
@@ -1097,15 +1139,15 @@ textarea {
   display: inline-block;
   border: 1px solid #d32f2f;
   font-weight: 600;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
-#register .get-facebook-btn:hover{
-  background: #039be5;
+.register .get-facebook-btn:hover{
+  background: #039be5 !important;
   color: #fff !important;
   margin-bottom: 5px;
 }
-#register .get-google-btn:hover{
+.register .get-google-btn:hover{
   background: #d32f2f !important;
   color: #fff !important;
   margin-bottom: 5px;
@@ -1526,6 +1568,7 @@ section {
   width: 100% !important;
   padding-top: 10px;
 }
+
 .hasilPenipuan .hasilPenipuan-container {
   position: relative;
   padding: 20px;  
@@ -1533,6 +1576,11 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12) !important;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.hasilPenipuan .hasilPenipuan-container p{
+  font-size: 14px;
+  padding-top: -5z0px !important;
 }
 
 .hasilPenipuan-container .lapor-btn{
@@ -1559,6 +1607,11 @@ section {
   transition: 0.3s;
   border-radius: 50px;
 }
+
+.hasilPenipuan-container .review-btn:focus, .hasilPenipuan-container .diskusi-btn:focus{
+  outline: none;
+}
+
 
 .hasilPenipuan-container .review-btn:hover{
   background-color: #26c6da;
@@ -1620,6 +1673,7 @@ section {
   font-weight: 600;
   color: #212121;
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .hasilPenipuan-container h4{
@@ -1648,12 +1702,14 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: #ffeb3b;
 }
+
 
 .hasilPenipuan-container .detailbar .progress .skill .val {
   float: right;
   font-style: normal;
+  color: #212121 !important;
 }
 
 .hasilPenipuan-container .detailbar .progress-bar-wrap {
@@ -1664,7 +1720,11 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #4668a2;
+  background-color: #4b636e;
+}
+
+.hasilPenipuan-container .rating-review{
+  color: #ffeb3b;
 }
 
 @media (max-width: 575px) {
@@ -1710,6 +1770,59 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*--------------------------------------------------------------
+
+#review
+--------------------------------------------------------------*/
+
+.laporan-pengguna .review-img{
+  background-color: #212121;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px; 
+}
+
+.laporan-pengguna{
+  padding: 20px !important;
+  width: 100%;
+  border: 0 !important;
+  overflow-y: scroll;
+}
+
+.laporan-pengguna .card{
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.05);
+  border: 0 !important;
+  margin-bottom: 10px;
+}
+
+.laporan-pengguna span{
+  font-size: 14px;
+  font-weight: 400;
+  float:left;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.laporan-pengguna .date-review{
+  font-size: 12px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 15px;
+  color: #d5d5d5 !important;
+}
+
+.laporan-pengguna .rating-review,{
+  padding-top: 15px;
+  color: #ffeb3b;
+}
+
+.laporan-pengguna .review-txt{
+  font-size: 12px;
+  float:left;
+  padding-left: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -2819,7 +2932,7 @@ section {
 }
 
 .cekPenipuan .php-email-form button[type="submit"] {
-  background: #47b2e4;
+  background: #fff !important;
   border: 0;
   padding: 12px 34px;
   color: #fff;
@@ -3069,9 +3182,9 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
+  padding: 10px 0px 5px 0;
   min-height: 40px;
-  margin-top: 72px;
+  margin-top: 80px;
 }
 
 @media (max-width: 992px) {
