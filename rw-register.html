@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Arsha Bootstrap Template</title>
+  <title>Register Fishcek</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,151 +38,67 @@
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"><a href="index.html">Fishcek</a></h1> <!-- Logo -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/fish.png" alt="" class="img-fluid"></a> -->
+  <main id="main">
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Beranda</a></li>
-          <li><a href="result-report.html">Cek Penipuan</a></li>
-          <li><a href="#services">Lapor Penipuan</a></li>
-          <li><a href="#portfolio">RekAn</a></li>
-          <!-- <li><a href="#team">Team</a></li>-->
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
-          <li><a href="#contact">Contact</a></li>
+    <!-- ======= Breadcrumbs ======= -->
+    
 
-        </ul>
-      </nav><!-- .nav-menu -->
-      
-      <a href="#about" class="get-login-btn scrollto ml-5" data-toggle="modal" data-target="#myModal">Login</a>
-      <a href="#about" class="get-register-btn scrollto">Daftar</a>
-    </div>
-  </header><!-- End Header -->
-
- 
-
-      <div class="container es-2">
-        <span>&nbsp;</span>
-      </div>
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-        <div class="section-title">
-          <h2>Daftar Akun</h2>
-        </div>
-
-        <div id="register">
+    <section class="inner-page">
+      <div class="register">
+        <div class="container">
+          <div class="title-login-register">
+            <div class="container">              
+              <div class="logo">
+                <img src="assets/img/fish.png" alt="" class="img-fluid"><a href="index.html">Fishcek</a></h1>
+              </div>
+              <h2>Register</h2>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-lg-5 register-img" >
+            <div class="col-lg-5">
               <img src="assets/img/vector-register.png" class="img-fluid" alt="">
-              
             </div>
             <div class="col-lg-7">
-              <form action="index.html" method="post" role="form" class="php-register-form">
+              <form class="php-register-form" action="register.php">
                 <div class="form-group">
-                  <label for="name">Nama Lengkap</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label>Nama Lengkap</label>
+                  <input type="text" class="form-control" name="namaLengkap" placeholder="Nama Lengkap">
                 </div>
                 <div class="form-group">
-                  <label for="name">No Telepon</label>
-                  <input type="number" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <label>Username</label>
+                  <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <label>Email</label>
+                  <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                  <label for="name">Password</label>
-                  <input type="password" class="form-control" name="password" id="password" data-rule="password" data-msg="Please enter a valid email" />
+                  <label>Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="Masukan Password Minimal 8 Karakter">
                 </div>
                 <div class="form-group">
                   <input type="checkbox" name="name" class="form-checkbox" id="name" />
                   <span>Saya Menyetujui <a href="#">Syarat dan Ketentuan</a> serta <a href="#">Kebijakan Privasi</a> </span>
                 </div>
+                <div class="form-group text-center">
+                  <button type="submit" class="get-register-btn" onclick="window.location.href='index.html'">Daftar</button>
+                </div>  
                 <hr>
-                <div class="text-center mb-3"><button type="submit" class="get-register-btn">Daftar</button></div>
-                <div class="sosial-media-">
-                  <p class="text-center">Daftar Dengan</p>
-                  <div class="text-center">
+                <div class="form-group text-center">
+                    <p>Daftar Dengan</p>
                     <button type="button" class="get-facebook-btn" onclick="window.open('https://facebook.com/', 'Facebook' , 'height=500,width=500');">Facebook</button>
                     <button type="button" class="get-google-btn" onclick="window.open('https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=532352704633-6pkces9iboppp465idnovkcqtlsa8j7t.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.figma.com%2Ffinish_google_sso&response_type=code&scope=profile%20email&access_type=online&prompt=select_account&state=Onr%2BNlXfOwgG9mfd%2Fx6FZVF94asqIoXZmuu8Tm%2F9d1Yg&flowName=GeneralOAuthFlow', 'Google' , 'height=500,width=500');">Google</button>
-                  </div>              
-                </div>
+                  </div>               
               </form>
+              <h4 class="text-center" style="font-size: 14px; font-style: roboto; padding-top: 20px;" >Sudah Punya Akun?<a href="login.html"> Login Disini</a></h4>
             </div>
-          </div>        
+          </div>
         </div>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
 
-    <!-- ======= Modal Form ======= --> 
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="container" data-aos="fade-up">
-            <div class="modal-title">
-              <h2>Masuk</h2>
-            </div>
-    
-            <form action="#" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <label for="name">Email</label>
-                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Silahkan Masukan Email Yang Aktif" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Password</label>
-                <input type="password" class="form-control" name="password" id="password" data-rule="password" data-msg="Masukan Password" />
-                <div class="validate"></div>
-              </div>
-              <h3 href="#" class="text-forget text-center"><a href="#">Lupa Kata Sandi ?</a></h3>
-              
-              <!-- <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div> -->              
-              <div class="text-center"><button type="submit">Masuk</button></div>
-            </form>
-            <hr>
-            <h3 href="#" class="text-small text-center">Login Dengan</h3>
-            <div class="sosial-media-btn">
-              <a href="#about" class="get-facebook-btn">Facebook</a>
-              <a href="#about" class="get-google-btn">Google</a>
-            </div>
-            </div>
-            <h3 href="#" class="text-small text-center">Belum Punya Akun ? <a href="#">Daftar Disini</a></h3>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- ======= End Modal Form ======= -->
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -260,12 +176,13 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        <div class="icon"><i class="bx bx-code-alt"></i> With <i class="bx bxs-heart"></i> in Bandung, Indonesia</div>
+        <div class="icon"><i class="bx bx-code-alt"></i> With <i class="icon icofont-heart"></i> in Bandung, Indonesia</div>
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

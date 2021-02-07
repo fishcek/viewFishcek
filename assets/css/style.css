@@ -151,8 +151,6 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-
-/*--------------------------------------------------------------
 # Header Login Register
 --------------------------------------------------------------*/
 
@@ -1316,7 +1314,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #47b2e4;
+  color: #37517e;
 }
 
 .section-title h2::before {
@@ -1815,7 +1813,7 @@ section {
   color: #d5d5d5 !important;
 }
 
-.laporan-pengguna .rating-review,{
+.laporan-pengguna .rating-review{
   padding-top: 15px;
   color: #ffeb3b;
 }
@@ -3616,6 +3614,10 @@ section {
 
 #footer .credits a {
   transition: 0.3s;
+}
+
+#footer .icofont-heart{
+  color: #e91e63 !important;
 }
 
 @media (max-width: 768px) {
