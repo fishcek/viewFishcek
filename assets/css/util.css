@@ -2983,6 +2983,16 @@
 	bottom: 0px;
 }
 
+/*[ display ]
+-----------------------------------------------------------
+*/
+.displayUnHide{
+	display: block;
+}
+
+.displayHide{
+	display: none;
+}
 
 
 
