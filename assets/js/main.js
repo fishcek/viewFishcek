@@ -121,7 +121,7 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 0) {
       $('#header').addClass('header-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
@@ -200,4 +200,38 @@
     aos_init();
   });
 
+  $('#media').on('change', function() {
+    if(this.value=='p2'){
+      $("#noTelepon").addClass('displayUnHide').removeClass('displayHide');
+      $("#noRekening").addClass('displayHide').removeClass('displayUnHide');
+
+      $("#formTelepon").addClass('displayUnHide').removeClass('displayHide');
+      $("#formRekening").addClass('displayHide').removeClass('displayUnHide');
+    }else{
+      $("#noRekening").addClass('displayUnHide').removeClass('displayHide');
+      $("#noTelepon").addClass('displayUnHide').removeClass('displayHide');
+
+      $("#formRekening").addClass('displayUnHide').removeClass('displayHide');
+      $("#formTelepon").addClass('displayUnHide').removeClass('displayHide');
+    }
+  });
+
+  $('#kronologi').on('keyup', function(){
+    var maxWords = 1000;
+    var len = $('#kronologi').val().length;
+    if (len >= maxWords) {
+      $('#countRow').text(' you have reached the limit');
+    } else {
+      var char = maxWords-len;
+      $('#countRow').text(char + ' Karakter yang tersisa');
+    }
+  });
+
+  $('#selectKategori').on('change', function(){
+    if (this.value=='1') {
+      $('#titleKategori').text('Rekening');
+    }else{
+      $('#titleKategori').text('Telepon');
+    }
+  });
 })(jQuery);

@@ -106,7 +106,7 @@ textarea {
   font-size: 24px;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   background: #47b2e4;
   color: #fff;
   transition: all 0.4s;
@@ -151,6 +151,46 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Header Login Register
+--------------------------------------------------------------*/
+
+.title-login-register {
+  transition: all 0.5s;
+  z-index: 997;
+  padding-bottom: 20px;
+}
+
+.title-login-register h2 {
+  float: right;
+  color: #42a5f5;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.title-login-register .logo {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title-login-register .logo a {
+  color: #42a5f5;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.title-login-register .logo img {
+  max-height: 40px;
+}
+
+
+
+/*--------------------------------------------------------------
+
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
@@ -267,7 +307,7 @@ textarea {
 .get-login-btn, .get-register-btn {
   margin-left: 15px;
   color: #212121;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 7px 35px 7px 35px;
   white-space: nowrap;
   transition: 0.3s;
@@ -278,9 +318,47 @@ textarea {
   background-color: #FFF !important;
 }
 
-.get-login-btn:hover, .get-register-btn:hover{
+.get-send-btn{
+  margin-left: 15px;
+  color: #212121;
+  border-radius: 10px;
+  padding: 7px 35px 7px 35px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #47b2e4;
+  font-weight: 600;
+  background-color: #FFF !important;
+}
+
+.get-cancel-btn{
+  margin-left: 15px;
+  color: #212121;
+  border-radius: 10px;
+  padding: 7px 35px 7px 35px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #d81b60;
+  font-weight: 600;
+  background-color: #FFF !important;
+}
+
+.get-login-btn:hover, .get-register-btn:hover, .get-send-btn:hover{
   background: #31a9e1 !important;
   color: #fff;
+}
+
+.get-cancel-btn:hover{
+  background: #d81b60 !important;
+  color: #fff;
+}
+
+
+.get-send-btn:focus, .get-cancel-btn:focus, .get-login-btn:focus, .get-register-btn:focus{
+  outline: none !important;
 }
 
 @media (max-width: 760px) {
@@ -415,7 +493,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -530,7 +608,7 @@ textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 12px;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 0 20px 0 20px;
 }
 
@@ -556,7 +634,7 @@ textarea {
   padding: 6px 34px;
   color: #212121;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
   outline: n;
 }
 
@@ -573,7 +651,7 @@ textarea {
   margin-left: 12px;
   margin-bottom: 5px;
   color: #212121 !important;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 6px 25px 7px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -586,7 +664,7 @@ textarea {
   margin-left: 12px;
   margin-bottom: 5px;
   color: #212121 !important;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 6px 25px 7px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -781,7 +859,7 @@ textarea {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #212121;
@@ -928,7 +1006,7 @@ textarea {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #212121;
@@ -1053,7 +1131,7 @@ textarea {
   padding: 12px 34px;
   color: #212121 !important;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .register .get-register-btn:focus, #register .get-facebook-btn:focus, #register .get-google-btn:focus {
@@ -1067,7 +1145,7 @@ textarea {
 
 .register .get-register-btn{
   color: #212121 !important;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 6px 25px 7px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -1080,7 +1158,7 @@ textarea {
 
 .register .get-facebook-btn{
   color: #212121 !important;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 6px 25px 7px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -1093,7 +1171,7 @@ textarea {
 
 .register .get-google-btn {
   color: #212121 !important;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 6px 25px 7px 25px;
   transition: 0.3s;
   font-size: 15px;
@@ -1274,7 +1352,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #47b2e4;
+  color: #37517e;
 }
 
 .section-title h2::before {
@@ -1354,7 +1432,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1474,7 +1552,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 50px !important;
+  border-radius: 10px !important;
 }
 
 .cekPenipuan .php-email-form input:focus, .contact .php-email-form textarea:focus {
@@ -1500,7 +1578,7 @@ section {
   padding: 10px 27px 10px 27px !important;
   color: #212121 !important;
   transition: 0.4s;
-  border-radius: 40px;
+  border-radius: 10px;
   font-size: 14px;
   background-color: #fff !important;
 }
@@ -1550,7 +1628,7 @@ section {
   color: #212121;
   padding: 5px 20px 5px 20px;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .hasilPenipuan-container .lapor-btn:hover{
@@ -1566,7 +1644,7 @@ section {
   color: #212121;
   padding: 5px 20px 5px 20px;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .hasilPenipuan-container .review-btn:focus, .hasilPenipuan-container .diskusi-btn:focus{
@@ -1587,7 +1665,7 @@ section {
   color: #212121;
   padding: 5px 20px 5px 20px;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .hasilPenipuan-container .diskusi-btn:hover{
@@ -1699,7 +1777,7 @@ section {
 .cekPenipuan .php-email-form .btn-kategori{
   margin-left: 2px !important;
   color: #212121 !important;
-  border-radius: 50px !important;
+  border-radius: 10px !important;
   padding: 6px 25px 7px 25px !important;
   white-space: nowrap !important;
   transition: 0.3s !important;
@@ -1741,7 +1819,7 @@ section {
   background-color: #212121;
   width: 80px;
   height: 80px;
-  border-radius: 50px; 
+  border-radius: 10px; 
 }
 
 .laporan-pengguna{
@@ -1773,7 +1851,7 @@ section {
   color: #d5d5d5 !important;
 }
 
-.laporan-pengguna .rating-review,{
+.laporan-pengguna .rating-review{
   padding-top: 15px;
   color: #ffeb3b;
 }
@@ -1807,7 +1885,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1947,7 +2025,7 @@ section {
   padding: 12px 34px;
   color: #212121 !important;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .contact .php-email-form button[type="submit"]:focus {
@@ -2143,7 +2221,7 @@ section {
   padding: 9px 27px 9px 27px !important;
   color: #212121 !important;
   transition: 0.4s;
-  border-radius: 40px;
+  border-radius: 10px;
   background-color: #fff !important;
 }
 
@@ -2313,7 +2391,7 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
@@ -2357,7 +2435,7 @@ section {
   color: #444444;
   transition: all 0.3s;
   padding: 8px 20px;
-  border-radius: 50px;
+  border-radius: 10px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -2502,7 +2580,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 10px;
   width: 32px;
   height: 32px;
   background: #eff2f8;
@@ -2604,7 +2682,7 @@ section {
 .pricing .buy-btn {
   display: inline-block;
   padding: 12px 35px;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #47b2e4;
   transition: none;
   font-size: 16px;
@@ -2758,7 +2836,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2898,7 +2976,7 @@ section {
   padding: 12px 34px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .cekPenipuan .php-email-form button[type="submit"]:hover {
@@ -2949,7 +3027,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -3114,7 +3192,7 @@ section {
   padding: 12px 34px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -3413,7 +3491,7 @@ section {
   background: #fff;
   padding: 6px 10px;
   position: relative;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
   text-align: left;
 }
@@ -3436,7 +3514,7 @@ section {
   background: #47b2e4;
   color: #fff;
   transition: 0.3s;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -3574,6 +3652,10 @@ section {
 
 #footer .credits a {
   transition: 0.3s;
+}
+
+#footer .icofont-heart{
+  color: #e91e63 !important;
 }
 
 @media (max-width: 768px) {
