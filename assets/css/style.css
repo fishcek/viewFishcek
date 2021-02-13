@@ -323,6 +323,7 @@ select{
 
 .get-send-btn{
   color: #212121;
+  margin-left: 10px;
   border-radius: 10px;
   padding: 7px 35px 7px 35px;
   white-space: nowrap;
@@ -336,6 +337,7 @@ select{
 
 .get-cancel-btn{
   color: #212121;
+  margin-left: 10px;
   border-radius: 10px;
   padding: 7px 35px 7px 35px;
   white-space: nowrap;
@@ -2713,6 +2715,7 @@ section {
 }
 
 
+
 /*--------------------------------------------------------------
 # cekPenipuan
 --------------------------------------------------------------*/
@@ -3573,8 +3576,6 @@ section {
 
 /*responsive*/
 
-
-
 @media (max-width: 768px) {
   button, .faq-btn label{
     font-size: 12px;
@@ -3630,7 +3631,7 @@ section {
     padding: 5px 15px 5px 15px;
   }
   #header .logo {
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -3648,6 +3649,7 @@ section {
   }
   .get-send-btn, .get-cancel-btn{
     margin-top: 10px ;
+    margin-left: 0;
     width: 100% !important;
     text-align: center;
   }
@@ -3707,8 +3709,8 @@ section {
     border-width: medium;
     border-left: 0px solid #d2d2d2;
     border-right: 0px solid #d2d2d2;
-    border-top: 1px solid #d2d2d2;
-    border-bottom: 1px solid #d2d2d2;
+    border-top: 0px solid #d2d2d2;
+    border-bottom: 0px solid #d2d2d2;
   }
   .laporan-pengguna h2{
     font-size: 14px;
@@ -3744,10 +3746,27 @@ section {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 446px) {
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
+  }
+  #header .logo a {
+    color: #42a5f5;
+    font-weight: bold;
+    padding-left: 10px;
+  }  
+  #header .logo {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  #header .logo img {
+    max-height: 30px;
   }
 }
 

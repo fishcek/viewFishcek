@@ -220,10 +220,21 @@
     var maxWords = 1000;
     var len = $('#kronologi').val().length;
     if (len >= maxWords) {
-      $('#countRow').text(' you have reached the limit');
+      $('#countRow').text('');
     } else {
       var char = maxWords-len;
       $('#countRow').text(char + ' Karakter yang tersisa');
+    }
+  });
+
+  $('#ulasan').on('keyup', function(){
+    var maxWords = 250;
+    var len = $('#ulasan').val().length;
+    if (len >= maxWords) {
+      $('#ulasanCountRow').text('');
+    } else {
+      var char = maxWords-len;
+      $('#ulasanCountRow').text(char + ' Karakter yang tersisa');
     }
   });
 
