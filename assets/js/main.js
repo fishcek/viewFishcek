@@ -226,4 +226,37 @@
       $('#countRow').text(char + ' Karakter yang tersisa');
     }
   });
+
+  $('#selectKategori').on('change', function(){
+    if (this.value=='1') {
+      $('#titleKategori').text('Rekening');
+    }else{
+      $('#titleKategori').text('Telepon');
+    }
+  });
+
+  $('#selectKategori').on('change', function(){
+    if (this.value=='1') {
+      $('#titleKategori').text('Rekening');
+    }else{
+      $('#titleKategori').text('Telepon');
+    }
+  });
+
+  $('input[type=radio][name=faq]').change(function(){
+
+    var faq = $('input[name="faq"]:checked').val();
+    if (faq==1) {
+      $('#faqPelaporan').addClass('displayUnHide').removeClass('displayHide');
+      $('#faqRekan').addClass('displayHide').removeClass('displayUnHide');
+    }else if (faq==2){
+      $('#faqTitle').text('Konsultasi Hukum');
+    }else{
+      $('#faqRekan').addClass('displayUnHide').removeClass('displayHide');
+      $('#faqPelaporan').addClass('displayHide').removeClass('displayUnHide');
+    }
+
+  });
+
+  
 })(jQuery);

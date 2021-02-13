@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Arsha Bootstrap Template</title>
+  <title>Result Report | Fishcek</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -49,7 +49,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index.html">Beranda</a></li>
-          <li><a href="#cekPenipuan">Cek Penipuan</a></li>
+          <li><a href="index.html#cekPenipuan">Cek Penipuan</a></li>
           <li class="active"><a href="penipuan.html">Lapor Penipuan</a></li>
           <li><a href="#portfolio">RekAn</a></li>
           <!-- <li><a href="#team">Team</a></li>-->
@@ -75,38 +75,172 @@
         </ul>
       </nav><!-- .nav-menu -->
       
-      <!--<a href="#about" class="get-login-btn scrollto ml-5" data-toggle="modal" data-target="#myModal">Login</a> --> <!-- Aktifkan untuk Login Modals-->
       <a href="login.html" class="get-login-btn scrollto ml-5">Login</a>
       <a href="register.html" class="get-register-btn scrollto">Daftar</a>
     </div>
   </header><!-- End Header -->
 
+    <!-- ======= Modal Form ======= --> 
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container" data-aos="fade-up">
+            <div class="modal-title">
+              <h2>Masuk</h2>
+            </div>
+    
+            <form action="#" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Silahkan Masukan Email Yang Aktif" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Password</label>
+                <input type="password" class="form-control" name="password" id="password" data-rule="password" data-msg="Masukan Password" />
+                <div class="validate"></div>
+              </div>
+              <h3 href="#" class="text-forget text-center"><a href="#">Lupa Kata Sandi ?</a></h3>
+              
+              <!-- <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div> -->              
+              <div class="text-center"><button type="submit">Masuk</button></div>
+            </form>
+            <hr>
+            <h3 href="#" class="text-small text-center">Login Dengan</h3>
+            <div class="sosial-media-btn">
+              <a href="#about" class="get-facebook-btn">Facebook</a>
+              <a href="#about" class="get-google-btn">Google</a>
+            </div>
+            </div>
+            <h3 href="#" class="text-small text-center">Belum Punya Akun ? <a href="#">Daftar Disini</a></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- ======= End Modal Form ======= -->
+    
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>List Penipuan</li>
+          <li>Lapor Penipuan</li>
         </ol>
-        <h2>Penipuan</h2>
+        <h2>Daftar Terduga Penipuan</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          <button class="get-send-btn" onclick="window.location.href='lapor-penipuan.html';">Buat Pelaporan</button>
-        </p>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="hasilPenipuan">
+      <div class="container" >
+        <div class="hasilPenipuan-container">
+          <div class="form-group form-inline">
+          <label>Tampilkan Berdasarkan</label>
+            <select class="form-control" style="margin-left: 10px;" id="selectKategori">
+              <option value="0" selected hidden>--Pilih Urutan--</option>
+              <option value="1">No Rekening</option>
+              <option value="2">No Telepon</option>
+            </select>
+            <a href="lapor-penipuan.html" class="get-send-btn">Buat Laporan</a>
+          </div>
+
+          <h3>Review Terduga Penipuan No <span id="titleKategori">Rekening</span></h3>
+          <div class="laporan-pengguna">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-1 col-md-12">
+                    <div class="review-img">
+                      &nbsp;
+                    </div>       
+                  </div>
+                  <div class="col-lg-2 col-md-12">
+                    <h2>Username <br><span>02 Februari 2021</span></h2>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                    <div class="rating-review"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bx-star"></i></div>
+                    <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo urna, in ultrices nunc. Sed aliquet lacus est, sit amet facilisis arcu porta et. Nullam ac molestie metus. Duis vel mauris in magna laoreet porta. Mauris in pellentesque leo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </div>
-    </section>
+    </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+   <!-- ======= Footer ======= -->
    <footer id="footer">
 
     <!--<div class="footer-newsletter">
@@ -182,7 +316,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        <div class="icon"><i class="bx bx-code-alt"></i> With <i class="bx bxs-heart"></i> in Bandung, Indonesia</div>
+        <div class="icon"><i class="bx bx-code-alt"></i> With <i class="icon icofont-heart"></i> in Bandung, Indonesia</div>
       </div>
     </div>
   </footer><!-- End Footer -->
