@@ -220,10 +220,21 @@
     var maxWords = 1000;
     var len = $('#kronologi').val().length;
     if (len >= maxWords) {
-      $('#countRow').text(' you have reached the limit');
+      $('#countRow').text('');
     } else {
       var char = maxWords-len;
       $('#countRow').text(char + ' Karakter yang tersisa');
+    }
+  });
+
+  $('#ulasan').on('keyup', function(){
+    var maxWords = 250;
+    var len = $('#ulasan').val().length;
+    if (len >= maxWords) {
+      $('#ulasanCountRow').text('');
+    } else {
+      var char = maxWords-len;
+      $('#ulasanCountRow').text(char + ' Karakter yang tersisa');
     }
   });
 
@@ -234,4 +245,34 @@
       $('#titleKategori').text('Telepon');
     }
   });
+
+  $('#selectKategori').on('change', function(){
+    if (this.value=='1') {
+      $('#titleKategori').text('Rekening');
+    }else{
+      $('#titleKategori').text('Telepon');
+    }
+  });
+
+  $('input[type=radio][name=faq]').change(function(){
+
+    var faq = $('input[name="faq"]:checked').val();
+    if (faq==1) {
+      $('#faqPelaporan').addClass('displayUnHide').removeClass('displayHide');
+      $('#faqRekan').addClass('displayHide').removeClass('displayUnHide');
+    }else if (faq==2){
+      $('#faqTitle').text('Konsultasi Hukum');
+    }else{
+      $('#faqRekan').addClass('displayUnHide').removeClass('displayHide');
+      $('#faqPelaporan').addClass('displayHide').removeClass('displayUnHide');
+    }
+
+  });
+
+  $('#ratingStar1').click(function(){var a = $('#ratingStar1 span').text(); $('#ratingInput').val(a); }); 
+  $('#ratingStar2').click(function(){var a = $('#ratingStar2 span').text(); $('#ratingInput').val(a); });
+  $('#ratingStar3').click(function(){var a = $('#ratingStar3 span').text(); $('#ratingInput').val(a); }); 
+  $('#ratingStar4').click(function(){var a = $('#ratingStar4 span').text(); $('#ratingInput').val(a); }); 
+  $('#ratingStar5').click(function(){var a = $('#ratingStar5 span').text(); $('#ratingInput').val(a); }); 
+  
 })(jQuery);
